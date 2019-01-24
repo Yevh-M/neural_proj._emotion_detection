@@ -1,10 +1,9 @@
 {
-  "name": "neural_networks",
+  "name": "nn",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Yevh-M <mynike37@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "brain.js": "^1.6.1"
+    "brain.js": "^1.1.2"
   }
 }
