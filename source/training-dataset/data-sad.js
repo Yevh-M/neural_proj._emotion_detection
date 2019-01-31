@@ -1,3 +1,4 @@
+// training data
 const sad = [
     {
         input: "I am sad",

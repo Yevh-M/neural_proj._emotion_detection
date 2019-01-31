@@ -1,3 +1,17 @@
+
+const brain      = require('brain.js');
+const trainData  = require('./source/training-dataset');
+const serializer = require('./source/serializer');
+const net        = new brain.NeuralNetwork();
+
+net.train(serializer.serialize(trainData)); //train neural network
+
+const output = net.run(serializer.encode('Nothing is not OK')); //simply runs the neural network
+// and returns the predicted value
+console.log(output);
+
+
+
 //
 // const brain = require('brain.js');
 //
@@ -26,23 +40,12 @@
 // console.log(output);
 
 // const brain      = require('brain.js');
-// const trainData  = require('./src/training-data');
-// const serializer = require('./src/serializer');
+// const trainData  = require('./source/training-data');
+// const serializer = require('./source/serializer');
 // const net        = new brain.NeuralNetwork();
 //
 // net.train(serializer.serialize(trainData), {log: true});
 
 
 
-
-const brain      = require('brain.js');
-const trainData  = require('./src/training-data');
-const serializer = require('./src/serializer');
-const net        = new brain.NeuralNetwork();
-
-net.train(serializer.serialize(trainData));
-
-const output = net.run(serializer.encode('Nothing is not OK'));
-
-console.log(output);
 

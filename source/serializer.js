@@ -1,5 +1,7 @@
-const fixLengths = (data) => {
+//encode and serialize our data
 
+const fixLengths = (data) => {
+//make all the arrays with equal length
     let maxLengthInput = -1;
     for (let i = 0; i < data.length; i++) {
         if (data[i].input.length > maxLengthInput) {
